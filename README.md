@@ -37,9 +37,8 @@
 - `阅读成交仪表盘`：最终可视化仪表盘，包含所有图表和指标  
 
 ## 🔄 数据处理流程
-
 A[每日销售汇总文件] -->|Power Query 合并| B(全量销售明细)
-C[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| B
+C[销售人员表] -->|Power Query 关联| B
 B --> D[数据透视表 + 计算列]
 D --> E[仪表盘公式引用]
 E --> F[动态图表 & 指标]
@@ -62,7 +61,7 @@ Power Query 数据获取
 
 仪表盘单元格使用 VLOOKUP + MATCH 实现行列双向查找。
 
-环比数据通过 IFERROR + GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。
+环比数据通过 IFERROR + GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。
 
 图表直接绑定透视表区域，自动随筛选器更新。
 
@@ -87,7 +86,7 @@ Power Query 数据获取
 4. 刷新数据
 打开 月度销售数据监控.xlsx。
 
-在 Excel 中点击 数据 → 全部刷新（或按 Ctrl+Alt+F5）。
+在 Excel 中点击 数据 → 全部刷新（或按 Ctrl+Alt+F5）。在 Excel 中点击 数据 → 全部刷新（或按 Ctrl Alt F5）。
 
 Power Query 会自动检测文件夹中的变化，合并新数据并刷新所有透视表和图表。
 
