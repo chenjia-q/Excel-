@@ -1,6 +1,6 @@
 # 月度销售数据监控仪表盘
 
-本项目基于 **Excel + Power Query   Excel电源查询Excel   Power Query   Excel电源查询** 构建了一个自动化的销售数据监控仪表盘，用于分析月度成交金额、客户数、客单价及环比趋势，并支持按区域、省份、产品期数下钻。通过将新的每日销售明细和销售人员信息放入指定文件夹，即可一键刷新报表，无需手动修改公式。
+本项目基于 **Excel + Power Query   Excel电源查询Excel   Power Query   Excel电源查询Excel   Power Query   Excel电源查询Excel   Power Query   Excel电源查询** 构建了一个自动化的销售数据监控仪表盘，用于分析月度成交金额、客户数、客单价及环比趋势，并支持按区域、省份、产品期数下钻。通过将新的每日销售明细和销售人员信息放入指定文件夹，即可一键刷新报表，无需手动修改公式。
 
 ## 📊 功能特性
 
@@ -61,7 +61,7 @@ Power Query 数据获取
 
 仪表盘单元格使用 VLOOKUP + MATCH 实现行列双向查找。
 
-环比数据通过 IFERROR + GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。
+环比数据通过 IFERROR + GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。
 
 图表直接绑定透视表区域，自动随筛选器更新。
 
