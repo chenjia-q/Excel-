@@ -17,7 +17,7 @@
   - 区域成交趋势图：基于数据透视表的动态图表  
 
 - **动态公式**  
-  综合运用 `VLOOKUP`、`MATCH`、`INDEX`、`GETPIVOTDATA` 等函数，实现筛选联动和指标自动计算。
+  综合运用 `VLOOKUP`、`MATCH   匹配`、`INDEX   指数`、`GETPIVOTDATA` 等函数，实现筛选联动和指标自动计算。
 
 ## 📁 文件结构
 项目文件夹/
@@ -38,10 +38,8 @@
 
 ## 🔄 数据处理流程
 
-```mermaid   “‘美人鱼   ```mermaid   “‘美人鱼```mermaid   “‘美人鱼   ```mermaid   “‘美人鱼```mermaid   “‘美人鱼   ```mermaid   “‘美人鱼```mermaid   “‘美人鱼   ```mermaid   “‘美人鱼
-graph LR   图LR图LR LR
 A[每日销售汇总文件] -->|Power Query 合并| B(全量销售明细)
-C[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| B
+C[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| BC[销售人员表] -->|Power Query 关联| B
 B --> D[数据透视表 + 计算列]
 D --> E[仪表盘公式引用]
 E --> F[动态图表 & 指标]
@@ -64,7 +62,7 @@ Power Query 数据获取
 
 仪表盘单元格使用 VLOOKUP + MATCH 实现行列双向查找。
 
-环比数据通过 IFERROR + GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。
+环比数据通过 IFERROR + GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。环比数据通过 IFERROR   GETPIVOTDATA 安全获取。
 
 图表直接绑定透视表区域，自动随筛选器更新。
 
